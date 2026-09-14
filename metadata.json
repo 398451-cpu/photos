@@ -1,0 +1,6 @@
+{
+  "name": "Photos",
+  "description": "A 3 by 3 photo grid of equal-dimension photographs with custom title, full-resolution lightbox viewer, and image replacement.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
