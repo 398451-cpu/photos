@@ -15,9 +15,9 @@ export const DEFAULT_GRID_PHOTOS: GridPhoto[] = [
   },
   {
     id: 'g3',
-    url: '/images/luffy-vs-sharkman.jpg',
-    title: 'Luffy vs. Sharkman',
-    caption: 'One Piece',
+    url: '/images/third-photo.jpg',
+    title: 'One Piece Portrait',
+    caption: 'Anime portrait',
   },
   {
     id: 'g4',
