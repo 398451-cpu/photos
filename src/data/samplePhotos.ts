@@ -33,9 +33,9 @@ export const DEFAULT_GRID_PHOTOS: GridPhoto[] = [
   },
   {
     id: 'g6',
-    url: '/images/killua-killua-zoldyck.gif',
-    title: 'Killua Zoldyck',
-    caption: 'Hunter x Hunter',
+    url: '/images/slot-six.gif',
+    title: 'PicMix Animation',
+    caption: 'Animated GIF',
   },
   {
     id: 'g7',
