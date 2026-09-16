@@ -15,9 +15,9 @@ export const DEFAULT_GRID_PHOTOS: GridPhoto[] = [
   },
   {
     id: 'g3',
-    url: '/images/third-photo.webp',
-    title: 'Hody Jones',
-    caption: 'One Piece',
+    url: '/images/third-photo.png',
+    title: 'Featured Photo',
+    caption: 'Gallery image',
   },
   {
     id: 'g4',

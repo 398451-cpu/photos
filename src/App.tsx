@@ -4,7 +4,7 @@ import { GridPhoto } from './types';
 import { LightboxModal } from './components/LightboxModal';
 import { Maximize2, Upload, RotateCcw, Shuffle, Sparkles, Image as ImageIcon } from 'lucide-react';
 
-const STORAGE_KEY = 'photos_3x3_grid_v5';
+const STORAGE_KEY = 'photos_3x3_grid_v6';
 const TITLE_STORAGE_KEY = 'photos_3x3_title_v1';
 
 export default function App() {
