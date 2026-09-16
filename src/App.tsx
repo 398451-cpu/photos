@@ -4,7 +4,7 @@ import { GridPhoto } from './types';
 import { LightboxModal } from './components/LightboxModal';
 import { Maximize2, Upload, RotateCcw, Shuffle, Sparkles, Image as ImageIcon } from 'lucide-react';
 
-const STORAGE_KEY = 'photos_3x3_grid_v6';
+const STORAGE_KEY = 'photos_3x3_grid_v7';
 const TITLE_STORAGE_KEY = 'photos_3x3_title_v1';
 
 export default function App() {
@@ -195,8 +195,7 @@ export default function App() {
                 loading="lazy"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
-                  if (photo.id === 'g1' && !e.currentTarget.dataset.fallback) {
-                    e.currentTarget.dataset.fallback = 'true';
+                  if (photo.id === 'g1') {
                     e.currentTarget.src = "https://static.wikia.nocookie.net/ippo/images/7/7e/Hajime_no_Ippo_over_100_million_copies_sold_celebration_drawing.png/revision/latest?cb=20230714200329";
                   }
                 }}

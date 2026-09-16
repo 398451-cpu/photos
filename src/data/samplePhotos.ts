@@ -21,9 +21,9 @@ export const DEFAULT_GRID_PHOTOS: GridPhoto[] = [
   },
   {
     id: 'g4',
-    url: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80',
-    title: 'Canopy Glow',
-    caption: 'Sunlight through forest',
+    url: 'https://static.wikia.nocookie.net/onepiece/images/8/88/Hody_Jones_Transformed.png/revision/latest?cb=20230403213454',
+    title: 'Hody Jones Transformed',
+    caption: 'One Piece Wiki',
   },
   {
     id: 'g5',
