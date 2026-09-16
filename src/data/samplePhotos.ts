@@ -51,8 +51,8 @@ export const DEFAULT_GRID_PHOTOS: GridPhoto[] = [
   },
   {
     id: 'g9',
-    url: 'https://images.unsplash.com/photo-1477959858617-67f30bc75b82?auto=format&fit=crop&w=1200&q=80',
-    title: 'City Lights',
-    caption: 'Metropolis night exposure',
+    url: '/images/ninth-photo.webp',
+    title: 'Solo Leveling',
+    caption: 'Episode 14',
   },
 ];
