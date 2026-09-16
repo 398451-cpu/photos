@@ -45,9 +45,9 @@ export const DEFAULT_GRID_PHOTOS: GridPhoto[] = [
   },
   {
     id: 'g8',
-    url: 'https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80',
-    title: 'Amber Dunes',
-    caption: 'Rippled desert sands',
+    url: '/images/eighth-photo.jpg',
+    title: 'Eighth Photo',
+    caption: 'Photo gallery',
   },
   {
     id: 'g9',
