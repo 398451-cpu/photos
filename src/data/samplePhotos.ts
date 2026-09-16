@@ -33,15 +33,15 @@ export const DEFAULT_GRID_PHOTOS: GridPhoto[] = [
   },
   {
     id: 'g6',
-    url: '/images/slot-six.gif',
-    title: 'PicMix Animation',
-    caption: 'Animated GIF',
+    url: '/images/killua-killua-zoldyck.gif',
+    title: 'Killua Zoldyck',
+    caption: 'Hunter x Hunter',
   },
   {
     id: 'g7',
-    url: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80',
-    title: 'Midnight Peak',
-    caption: 'Starlit alpine ridge',
+    url: '/images/baki-hanma.webp',
+    title: 'Baki Hanma',
+    caption: 'Baki',
   },
   {
     id: 'g8',
