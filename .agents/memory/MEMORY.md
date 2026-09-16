@@ -1,0 +1,1 @@
+- [GitHub publishing](github-publishing.md) — use the connected GitHub API when local HTTPS Git push lacks credentials.
