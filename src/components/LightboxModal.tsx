@@ -81,7 +81,8 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
           alt={photo.title}
           referrerPolicy="no-referrer"
           onError={(e) => {
-            if (photo.id === 'g1') {
+            if (photo.id === 'g1' && !e.currentTarget.dataset.fallback) {
+              e.currentTarget.dataset.fallback = 'true';
               e.currentTarget.src = "https://static.wikia.nocookie.net/ippo/images/7/7e/Hajime_no_Ippo_over_100_million_copies_sold_celebration_drawing.png/revision/latest?cb=20230714200329";
             }
           }}
