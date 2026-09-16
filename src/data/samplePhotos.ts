@@ -15,9 +15,9 @@ export const DEFAULT_GRID_PHOTOS: GridPhoto[] = [
   },
   {
     id: 'g3',
-    url: '/images/third-photo.png',
-    title: 'Featured Photo',
-    caption: 'Gallery image',
+    url: 'https://www.opfanpage.com/wp-content/uploads/2018/04/0.png',
+    title: 'Jinbe',
+    caption: 'One Piece',
   },
   {
     id: 'g4',
@@ -27,15 +27,15 @@ export const DEFAULT_GRID_PHOTOS: GridPhoto[] = [
   },
   {
     id: 'g5',
-    url: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80',
-    title: 'Glass Geometry',
-    caption: 'Skyscraper architectural curves',
+    url: '/images/fifth-photo.jpg',
+    title: 'Hody Jones',
+    caption: 'One Piece',
   },
   {
     id: 'g6',
-    url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
-    title: 'Azure Coast',
-    caption: 'Tropical shoreline surf',
+    url: '/images/killua-killua-zoldyck.gif',
+    title: 'Killua Zoldyck',
+    caption: 'Hunter x Hunter',
   },
   {
     id: 'g7',
