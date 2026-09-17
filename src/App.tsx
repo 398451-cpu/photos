@@ -195,8 +195,13 @@ export default function App() {
                 loading="lazy"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
-                  if (photo.id === 'g1') {
-                    e.currentTarget.src = "https://static.wikia.nocookie.net/ippo/images/7/7e/Hajime_no_Ippo_over_100_million_copies_sold_celebration_drawing.png/revision/latest?cb=20230714200329";
+                  if (!e.currentTarget.dataset.failed) {
+                    e.currentTarget.dataset.failed = 'true';
+                    if (photo.id === 'g1') {
+                      e.currentTarget.src = "https://static.wikia.nocookie.net/ippo/images/7/7e/Hajime_no_Ippo_over_100_million_copies_sold_celebration_drawing.png/revision/latest?cb=20230714200329";
+                    } else {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800&auto=format&fit=crop&q=80";
+                    }
                   }
                 }}
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
