@@ -4,7 +4,7 @@ import { GridPhoto } from './types';
 import { LightboxModal } from './components/LightboxModal';
 import { Maximize2, Upload, RotateCcw, Shuffle, Sparkles, Image as ImageIcon } from 'lucide-react';
 
-const STORAGE_KEY = 'photos_3x3_grid_v14';
+const STORAGE_KEY = 'photos_3x3_grid_v15';
 const TITLE_STORAGE_KEY = 'photos_3x3_title_v1';
 
 export default function App() {
@@ -195,13 +195,8 @@ export default function App() {
                 loading="lazy"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
-                  if (!e.currentTarget.dataset.failed) {
-                    e.currentTarget.dataset.failed = 'true';
-                    if (photo.id === 'g1') {
-                      e.currentTarget.src = "https://static.wikia.nocookie.net/ippo/images/7/7e/Hajime_no_Ippo_over_100_million_copies_sold_celebration_drawing.png/revision/latest?cb=20230714200329";
-                    } else {
-                      e.currentTarget.src = "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800&auto=format&fit=crop&q=80";
-                    }
+                  if (photo.id === 'g1') {
+                    e.currentTarget.src = "https://static.wikia.nocookie.net/ippo/images/7/7e/Hajime_no_Ippo_over_100_million_copies_sold_celebration_drawing.png/revision/latest?cb=20230714200329";
                   }
                 }}
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"

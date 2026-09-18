@@ -51,8 +51,8 @@ export const DEFAULT_GRID_PHOTOS: GridPhoto[] = [
   },
   {
     id: 'g9',
-    url: '/images/ninth-photo.webp',
-    title: 'Solo Leveling',
-    caption: 'Episode 14',
+    url: '/images/solo-leveling-article.jpg',
+    title: 'Sung Jinwoo',
+    caption: 'Solo Leveling',
   },
 ];
