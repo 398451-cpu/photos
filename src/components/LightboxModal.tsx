@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, BookOpen, Tv } from 'lucide-react';
 import { GridPhoto } from '../types';
 
 interface LightboxModalProps {
@@ -81,13 +81,8 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
           alt={photo.title}
           referrerPolicy="no-referrer"
           onError={(e) => {
-            if (!e.currentTarget.dataset.failed) {
-              e.currentTarget.dataset.failed = 'true';
-              if (photo.id === 'g1') {
-                e.currentTarget.src = "https://static.wikia.nocookie.net/ippo/images/7/7e/Hajime_no_Ippo_over_100_million_copies_sold_celebration_drawing.png/revision/latest?cb=20230714200329";
-              } else {
-                e.currentTarget.src = "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=1200&auto=format&fit=crop&q=80";
-              }
+            if (photo.id === 'g1') {
+              e.currentTarget.src = "https://static.wikia.nocookie.net/ippo/images/7/7e/Hajime_no_Ippo_over_100_million_copies_sold_celebration_drawing.png/revision/latest?cb=20230714200329";
             }
           }}
           className="max-h-[78vh] max-w-full object-contain rounded-xl shadow-2xl"
@@ -103,6 +98,37 @@ export const LightboxModal: React.FC<LightboxModalProps> = ({
             <ChevronRight className="w-5 h-5" />
           </button>
         )}
+      </div>
+
+      {/* Anime Details */}
+      <div
+        id="photo-description"
+        className="w-full max-w-4xl max-h-[20vh] overflow-y-auto mt-3 rounded-2xl border border-neutral-800 bg-neutral-950/95 px-4 py-3 text-left shadow-xl"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="flex items-start gap-3">
+          <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-blue-500/15 text-blue-300">
+            <Tv className="h-4 w-4" />
+          </div>
+          <div className="min-w-0">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-300">
+              From the anime
+            </p>
+            <h3 className="mt-0.5 text-sm font-semibold text-white">
+              {photo.anime || photo.caption || 'Anime information unavailable'}
+            </h3>
+          </div>
+        </div>
+
+        <div className="mt-3 border-t border-neutral-800 pt-3">
+          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-neutral-400">
+            <BookOpen className="h-3.5 w-3.5 text-neutral-500" />
+            Story
+          </div>
+          <p className="mt-1.5 text-xs leading-relaxed text-neutral-300">
+            {photo.story || 'No story description is available for this image.'}
+          </p>
+        </div>
       </div>
 
       <div className="text-xs font-mono text-neutral-400 pt-2">

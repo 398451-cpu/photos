@@ -4,7 +4,7 @@ import { GridPhoto } from './types';
 import { LightboxModal } from './components/LightboxModal';
 import { Maximize2, Upload, RotateCcw, Shuffle, Sparkles, Image as ImageIcon } from 'lucide-react';
 
-const STORAGE_KEY = 'photos_3x3_grid_v15';
+const STORAGE_KEY = 'photos_3x3_grid_v16';
 const TITLE_STORAGE_KEY = 'photos_3x3_title_v1';
 
 export default function App() {
@@ -99,6 +99,8 @@ export default function App() {
                 url: result,
                 title: formattedTitle || 'Uploaded Photo',
                 caption: 'Custom upload',
+                 anime: 'Custom image',
+                 story: 'This image was uploaded to the gallery and does not have default anime story information.',
               }
             : p
         )

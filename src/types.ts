@@ -3,4 +3,6 @@ export interface GridPhoto {
   url: string;
   title: string;
   caption?: string;
+  anime?: string;
+  story?: string;
 }
